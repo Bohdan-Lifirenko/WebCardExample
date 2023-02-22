@@ -20,7 +20,7 @@ public class CartServlet extends HttpServlet {
             session.setAttribute("cart", cart);
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("cartContentPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("cardFildPage.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -37,7 +37,7 @@ public class CartServlet extends HttpServlet {
             // Set the cart object as an attribute in the request
             request.setAttribute("cart", cart);
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("cartContentPage.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("cardFildPage.jsp");
             dispatcher.forward(request, response);
     }
 }

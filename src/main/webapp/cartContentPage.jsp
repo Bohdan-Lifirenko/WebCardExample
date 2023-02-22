@@ -1,29 +1,24 @@
 <%@ page import="com.example.webcardexample.Cart" %>
-<%@ page import="com.example.webcardexample.Product" %>
+<%@ page import="java.io.IOException" %>
+<%@ page import="com.example.webcardexample.Product" %><%--
+  Created by IntelliJ IDEA.
+  User: Robot
+  Date: 2/22/2023
+  Time: 8:45 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Cart Contents</title>
+    <title>Title</title>
 </head>
 <body>
 <h1>Your Cart Contents</h1>
-<ul>
+<p>
     <%
-        Cart cart = (Cart) request.getAttribute("cart");
-        if (cart != null) {
-            for (Product product : cart.getProducts()) {
+        Cart cart = (Cart) session.getAttribute("cart");
+        out.println(cart.getProducts());
     %>
-    <li><%= product.getName() %></li>
-    <%
-        }
-    } else {
-    %>
-    <li>Your cart is empty</li>
-    <%
-        }
-    %>
-</ul>
-<br>
-<a href="${pageContext.request.contextPath}cartFildPage.jsp">Add More Products</a>
+</p>
 </body>
 </html>

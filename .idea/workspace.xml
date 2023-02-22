@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1bf383e-82c5-4f87-a029-5a8a6b8630ed" name="Changes" comment="save">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1bf383e-82c5-4f87-a029-5a8a6b8630ed" name="Changes" comment="work version">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webcardexample/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webcardexample/CartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cartContentPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cartContentPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +26,34 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fc1e88e41221cb392c738545fe9ea5a2ec5fa42d" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1677098126" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -181,14 +205,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677089690979</updated>
-      <workItem from="1677089692147" duration="6293000" />
+      <workItem from="1677089692147" duration="4723000" />
     </task>
-    <task id="LOCAL-00001" summary="save">
-      <created>1677094848933</created>
+    <task id="LOCAL-00001" summary="work version">
+      <created>1677098135869</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1677094848933</updated>
+      <updated>1677098135869</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -196,8 +220,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value="work version" />
+    <option name="LAST_COMMIT_MESSAGE" value="work version" />
   </component>
 </project>
