@@ -20,28 +20,24 @@ public class CartServlet extends HttpServlet {
             session.setAttribute("cart", cart);
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("cardFildPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("cartContentPage.jsp");
         dispatcher.forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        Cart cart = (Cart) session.getAttribute("cart");
+            HttpSession session = request.getSession();
+            Cart cart = (Cart) session.getAttribute("cart");
 
-        cart.addProduct(
-            new Product((String) request.getParameter("product_name"))
-        );
+            cart.addProduct(
+                new Product((String) request.getParameter("product_name"))
+            );
 
-//        response.setContentType("text/html");
-//
-//        PrintWriter out = response.getWriter();
-//        out.println("<html><body>");
-//        out.println("<h1>" + "message" + "</h1>");
-//        out.println("</body></html>");
+            // Set the cart object as an attribute in the request
+            request.setAttribute("cart", cart);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("cartContentPage.jsp");
-        dispatcher.forward(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("cartContentPage.jsp");
+            dispatcher.forward(request, response);
     }
 }
