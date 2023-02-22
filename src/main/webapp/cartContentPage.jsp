@@ -13,11 +13,21 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Your Cart Contents</h1>
+<p>Your Cart Contents:</p>
 <p>
     <%
         Cart cart = (Cart) session.getAttribute("cart");
-        out.println(cart.getProducts());
+
+        if (cart == null) {
+            cart = new Cart();
+            session.setAttribute("cart", cart);
+        }
+
+        for (Product product : cart.getProducts()) {
+            out.println(
+                String.format("<p> %s </p>", product)
+            );
+        }
     %>
 </p>
 </body>
